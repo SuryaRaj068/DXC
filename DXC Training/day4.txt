@@ -1,0 +1,289 @@
+ascii/unicode
+    =>ASCII
+        =>it's imp concept in code language
+        =>American Standard code for information interchange
+        =>all cpu/ h/w understand only binary value
+
+        for(int i=0;i<n;i++){
+            printf("hi hellow");
+        }
+                ||
+                ||
+
+        =>    binary
+
+        =>Ascii =>it's an approch for encoding charater 
+        =>each charater that your using in your code i will represent that that character into some numeical form
+        =>and that numerical form i am using to convert the code
+        =>ascii will help us represent your character into numerical
+
+           Ascii
+        for=>130
+            compileer
+            =>binary 101
+
+        name="surya"; =>1010101000000
+        =>ascii will represent charater value in number
+    
+        s=> 76
+        u=> 82
+        y=> 84
+        a=> 65
+        A=65
+        a=97
+        range=>0->127
+        76,82,84,65=>101001010,10111001001,1010001001,10101001010,1010111110101
+    
+    Constants in c
+        =>the value of the variable that can't be change in the entire life of program
+        =>for create  Constants varaible in c 
+            using const keyword
+
+            syntax
+                const datatye variable_name = value; 
+
+
+function
+    =>when we create any programs
+    =>program is a collection statements
+    =>your set of statements in program is less then use of program will be easy
+    =>application grows the statements is allso inc
+    =>complexity of using that program is also inc
+
+    =>10000
+        =>adding 5000
+        =>700 sub
+    =>as proram grows the reusability of program is difficult
+    =>over come this issue they have concept called function
+
+    =>function say when we have large program to write
+        =>divide the program into multiple small block 
+            =>that small block in your program is function
+        =>this function hold set of programming statements which is encloseed by {}
+
+    =>this approch will help us reuse that block when ever i want by calling that function when i need
+
+    =>Advantages of function
+        =>By using this reusability code
+        =>by using function,we can qavoid rewriting of code
+        =>it's help us to divide the program into small blocks
+
+when we any function c 
+    =>3 main step
+        =>function declaration:
+        =>function definition
+        =>function called
+
+when we use any function we have declaration and definition a function before main method
+
+
+void add(int a, int b);//declaration
+ void main(){
+    add(10,20);//function call
+    add(200,300);
+ }
+ void add(int a,int b){
+
+int c=a+b;
+}
+
+//function which don't have any body 
+//function declaration =>your inform the complier about your function name and it's parameters and return type;
+
+//definition of function is nothing but we are mention the actual executed statements
+//it's a proces
+
+//we function call to call the function to execute the statement that are present in function when ever i need 
+//when we try to call function we can pass the arguments
+
+we have two type of function
+    =>user defined function 
+        =>any function which is create by the developer
+        =>each user defined function will be present with in that file
+
+    =>library function
+        =>the function which is present in your header that function are library
+        printf(),scanf() i can use when ever i want in any file
+
+    return type 
+        =>every function in c start with return
+            =>when we call any method, if method return anthing back to you that will take care by return type
+            =>we use void when your function not return anything
+            =>to return anything from function we have to use return 
+
+    =>recursion in c
+
+    Task
+        =>Bank system
+            struct bank{
+                int id;
+                char name[10];
+                place   place[10];
+                float balance;
+                long int account;
+            }
+
+            struct banklist{
+                struct bank array[10];
+            }
+
+            addbank() function will bank instance to bank list;
+            search bank() =>search bank in the list based on account id
+            updateBank()=> search bank in the list based on account id then updateBank details link balance
+
+method(function call type)
+    =>two type of call method
+        =>call by value
+        int a=90;
+        int b=40;
+            =>add(a,b);
+            =>call by value ,when we call method we pass the actual value
+            =>when we pass actual value to the method
+            =>parameters which try hold that argument value will be hold by this parameters ,it's memory alocation will be done different location on each time of call;
+
+        =>call by reference 
+            when yopu calling the method ,we are sending the address of the varaible which hold that value
+            =>it's a process of calling method with address of the varaible which holding that value than actual value
+            =>we can modified the value of that by method
+
+=>recursion in c
+            =>functon calling by itself;
+            =>it's a process of calling the function with in the same function 
+            =>the call that is used for this recursion is recursive call
+            =>recursive call have chance to get into infinite loop
+    use
+        =>we recursion approh in some place
+            =>recursive approch in iteration
+            [1,2,3,4,5,6,7,8,9]
+            =>1,2,3,...
+            =>sorting
+            =>searching
+            =>...
+            =>..
+
+        =>non linear concept we use recursion
+
+
+    example
+
+       void add(int a, int b){
+
+            c=a+b;
+            printf("sun %d\n",c);
+            add(2,6);
+        }
+
+      void  main(){
+            add(2,5);
+        }
+
+..................................................................................................
+
+    =>type casting
+        =>it's an process of convert the data from one type to another
+        =>
+        implicit type conversion
+            =>type casting(type conversion) will be done automatic
+            =>it's done by complier ,without developer trigger
+
+        explicit type conversion
+            =>it's a process of type casting by developer-defined
+            syntax 
+             varaible =  (type) value;
+
+        when we want to convert from higher type to lower type
+
+            bool=>char=>int=>float=>double
+
+        int c= 10+10.0
+        =>20 (type promotion)
+    
+        int 10
+        float 10.0
+error
+compile error
+
+
+DS
+    Binary tree
+        =>Tree Data Structure
+        =>non linear data Structure
+        =>binary tree will try to hold the value in the form of hierachical order
+        =>when we try to store any value in binary tree it will be in the form of nodes
+        =>each node in binary will have multiple child this approch hierachical approch
+        =>binary tree have one main node root (topmost element in tree)
+        =>sub node in tree are called child node
+        =>we can access each node in tree with the help of it's parent
+
+                node   =>root
+    node1                 node2 child node
+node3   node4        node5      node6 =>leaf node
+
+                                        10,2,4,16,18,47,90
+                          10
+                    2          4
+                16    18    47   90
+
+        torrent =>pear base n/w
+
+            
+            node1         node2
+
+        cust          customer
+
+binary tree have some rules
+    =>each node in a tree at most can have 2 child
+    =>each value try to store in tree will have approch
+    =>all the value that is less than root node must be at the left 
+    =>all the value that is greater than node must be at the right
+
+Advantages  
+    =>searching of data will be very easy
+    =>adding lement in tree is easy
+
+dis Advantages
+    =>delete
+    =>sorting
+        
+    50,47,12,55,53,17,9,100
+
+                      
+
+
+
+main opration
+    =>insert()
+    =>inorder()
+    =>preoredr()
+    =>postorder()
+    =>what's app using binary tree
+
+
+struct bt{
+    int data;
+    struct bt *left;
+    struct bt *right;
+};
+
+
+struct bt * insert(struct bt * q,int val){
+    struct bt *temp=(struct bt*) malloc(sizeof(struct bt));[12, null, null]
+        if(q==NULL){
+            temp->data=val;
+            temp->left=NULL;
+            temp->right=NULL;
+            return temp;
+        }
+        else{ 12 <  47
+            if(val<q->data){    null,12
+                q->left=insert(q->left,val); q->left=[47,null,null]
+            }
+            else{
+                q->right=insert(q->right,value);
+            }
+
+        }
+        return q;
+
+}
+

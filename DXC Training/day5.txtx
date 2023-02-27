@@ -1,0 +1,186 @@
+=>c projects
+    =>team 1
+         Electrical bill calculator(intro)(Bhavani,Kishore.E, Krishna)
+    =>team 2
+         hospital management system(intro)(Uma Maheshwari, Keerthana reddy,Keshav Prasad)
+            =>list modules list
+            =>basic idea 
+            =>DS =>type
+            requirement gathering
+    =>team 3
+         lsb image stegnography project(intro)(Aaditi, Ketan,Lakshmi priya),
+    =>team 4
+         inventory management system=>(Kavya sree,Keerthi Cherukuru,Kiran p gowda)
+         tools
+         =>details
+         =>function
+         =>pointer
+    =>team 5
+        customer billing system(kishore,Kavya,Kowshik)
+    =>team 6
+        Airline booking system(Varshini,Keerthi,Bharath)
+        Bharath,
+         =>details
+         =>function
+         =>DS
+    =>team 7
+        vaccine registration system(intro)(Sai Kiran,Kavi Priya,Nikita Devendra Pwar)
+    =>team 8
+        Banking system(Ramakrishna,Kavana,Keerthi Chelluri)
+        =>details
+         =>function
+         =>DS
+        =>sai kiran,
+
+
+Binary
+
+        torrent
+            =>application
+
+                    peer tom peer communication system
+                        =>movie rules
+                    =>distributed server system
+                           
+                           movies => system 1 => copy of that movie
+                           =>system  || sending , reciving =>
+                           each 
+
+                                    root(server)
+
+                        system 1                   system 2
+
+                system 3      system 4
+
+
+                    =>main server  //down                                  youtube root
+                                                                            UK 
+                                                                sounth ind(ser)     north india(ser)
+                                                                    ban              delhi
+                                                            cl1=>movies
+                                                            
+
+              client1 cl2 cl3 .... cln   
+
+              100,40,120,130,105,47,34,50
+
+                                100 root
+                            40         120
+                        34    47    105    130
+                                50
+
+                                bit conies
+                                 bit mining
+                                 back windows
+
+                                100
+                        40                 120
+                    34    47           105     130
+                            50    
+
+            =>     root node    
+            => when we delete any node in tree the left node will be next node in tree
+            => 100
+                                    40
+                                34           120 
+                                        105       130    
+                                    47
+                                        50                             
+
+error in c
+
+    =>what is error?
+        =>error will avoid to get expected out
+        =>mistake made when you coding which result in fault output
+        =>error is a fault which you made which make your program behavior abnormal
+        =>error is also bugs
+        =>solve bugs in your program
+        =>programer task make shower that your program don't have any bugs(debugging)
+
+    error we may detect the error in two stages
+        =>error at compile time =>easy to debug
+        =>error at execute time => little difficult
+
+        compile time error 
+            =>synatax error 
+                =>this error are identified at compile time
+                =>this thrown by compiler at the time of compilation
+                =>why this error will occurred 
+                    =>this is becouse of mistake made by developer when they try to code(at the synatax)
+                    =>this type are easy debugged,beginners will make this mistake most of the time
+     (execution)  Run time error
+                =>this is type of error not identifed by compiler
+                =>this eeror will be occurred at exceution time of your program
+                =>funding this type of error is every difficult , complier not point the error
+                =>logical error
+                    =>what ever program we writen is not gien desired output,but program don'r have any error
+                    =>this error type occur depend on developer logical thinking
+        linker error
+                    =>due to file creation fail
+
+File handling in c
+    =>file handling library in c 
+    =>which help us intract with perticular file with the help c program
+    =>by fali handling library we create ,delete ,write,remove , update the value in file
+    =>when try to display large data set on console, then try store that data then try to display step by step
+    => we con't store the value directly in memory (your memory is volatile)
+    =>you can store the data in file with the help of file handling system in your os
+
+ operation we can perform on file with the help of file handling system
+    =>create a new file
+    =>delete the file
+    =>opening existing file
+    =>read from the file
+    =>write from the file
+
+for perform all this operation your file handling system provide some build in function
+    list of build we have file handling library
+            =>fopen() : help us to open existing file or create new file
+            =>fscanf() : help read the data from current file file
+            =>fprinf() :help us to write the data to that file
+            =>fgetc() :help read single character from file
+            =>fputc() : help us to write single character into file
+            =>fseek() : position of your curret read
+            =>fclose() : close the file which is open
+
+gjfhgfhghddfgdfhfkghb ghsfghsdj
+
+
+String in c
+    =>strings in c
+        =>string is a collection character
+        =>string is an array of char
+        =>each string c will end will null ('\0')
+        =>null is only opryion for us to identify end of string
+    
+    creation of string in c
+        =>by using ""
+    how can we hold string in c
+        =>we can hold the string with the help of array of character
+         char array[10];
+        char name[]="surya"; //literal string
+        char name[]={'s','u','r','y','a','\0'};//char array string
+
+    =>when you try to initalize the string with the help of char array we need to mention null at the end of the string
+    =>if you literal you don't need to mention null at the end
+
+how can read string
+    =>with the help of length of the string
+    =>with the help of null pointer
+
+build in methods in string 
+        strlen()=>return length of given string
+        strcpy(destination,source) =>help to copy the string
+        strcmp(str1,str2) =>compare the string
+        strrev(string) => return reverse
+        strlwr(string) => return string into lower case
+        strupr(string) =>return string in upper case
+
+    library string.h
+math in c
+
+pointer
+Dynamic memory
+programs
+
+    

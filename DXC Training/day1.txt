@@ -1,0 +1,286 @@
+memory managment
+    =>Ram => temp memory
+        =>main memory
+            =>faster memory which is used your cpu
+    data structure =>is mainly consider handling of data in Ram
+
+    =>Rom => dat structure used in rom also
+          => database build on data structure (mysql monodb)
+
+algoexport.com
+
+
+
+data structure
+    => managment of memory and arragment of data
+    => memory allocation process,access of the data from the memory 
+
+    =>Data structure
+        Data + Structure
+        =>arrange of data and store that data 
+        for this we are using fro std data structure
+
+        list of data struture 
+        1. Array
+        2. linked list
+        3. stack 
+        4. queue
+        5. tree
+            =>binary tree
+        6. graph
+        7. structure
+
+    collection ferame
+     haskmap
+     object 
+
+     1 Array
+        =>what is array?
+            =>collection of similar data with sametype
+            =>stored in contiguous memory location
+        =>variable in program language
+            =>container which hold data(which the address of data)
+        =>it's a type variable which is basicaly help us to hold multiple value at a time
+        =>Ex array variable 
+            =>variable hold the address of the value
+        =>array variable hold the address of first value in that data list
+
+
+        =>array data store the value in contiguous memory
+
+        =>array must hold the values in contiguous memory becouse array variable will hold first value address in the list 
+        =>if want access any value in the array we will use first address possion of that value in that
+        =>Array will hold same type of data
+            why?
+            =>data type size
+            =>data with equal siZe it hold
+            =>position
+
+        data which we try to store in program language
+            =>data will groph in to different type
+
+        algirthm to to calculate the address will prifor it
+            address of first value  
+            =>data size 
+
+            position algorithm
+            (index value)
+                address +byte+index
+
+            memory location
+                => each memory location is bits
+                    =>hemanth
+                    =>binary value 01 =>1=>high 010100101011000111110000000
+                                    0=>low
+
+                    =>electrical singal
+                    "hemanth" =>4byte 
+                    1byte=8bits
+                    4byte=32 bits 4*8=32bits
+                    100+32+position=>address
+                    32+32
+
+                    address+(32*4)
+                    0+(64*4)
+                    0+128 => 128
+
+
+
+            memory 
+
+
+            ------------------------------------------------------------------------------------
+            |    coils each coils will small electrical block                                                                                  |
+            |  |1|0| | | | | |  | | | | | |  | | | | |
+                0                       32             64           128
+               0 ,|||| 
+                bits                                      |
+            |                                                                                   |
+            |                                                                                   |
+            |                                                                                   |
+            |                                                                                   |
+            |                                                                                   |
+            ------------------------------------------------------------------------------------
+
+        
+
+
+            ["hemanth","manoj","rajkumar","shwetha","shilpa","rakesh","roshan","janki",...]
+     array1=100 100,      101,     102,       103       104         105   106      107
+ arayy[100]="hemanth"
+ 100+1
+  array[100+1]="manoj"
+
+  array[100+4]="shilpa"
+
+            main Advantage
+                =>i can hold multiple value at a time
+                =>i can access random value a time with the help of position
+                =>memory utility we easy
+                =>replace of multiple value is easy
+            Disdvantage
+                =>size of array
+                =>contiguous memory is main Disdvantage of array
+                =>we your array is getting biger handle of that array is diffecult O(n)
+
+            if you try to access array value from out the range then we can get exception 
+                =>array out of bound exception
+
+
+    =>linked list   
+            =>
+
+
+
+
+
+        memory
+            =>RAM location
+                =>Area [memory]
+                    =>multiple sites(address) on top this we have buildings(data)
+
+        =>variable is used to help us to hold that memory address 
+        =>using this address i can get data from that address
+        =>each variable can able to hold one value at a time
+
+        =>hold the name of person who are attending this session
+
+        30 variable to hold 30 names
+
+        name='manoj'
+
+
+Linked list
+    =>pointers
+    =>linked structure
+        =>what is linked list?
+            =>linear data structure
+            =>contain the node
+            =>each node will contain data and refernce of other node
+        =>was intr becouse of overcome Disdvantage of array
+        =>linked is focus on provide dynamic memory to store the data inst of usin contiguous memory
+        =>linked list provide dynamic size
+
+    =>linked data structure concept
+
+        =>["rajesh","surya","ram","punith","shree","sunil","dan","denis",.      ..(to hold company)            ...]
+            100,     101     102    103      104      105   106   107 ,         150                           199  
+
+
+=>linked structre follow this approch
+    =>when try to create linked it will not look total element you try to store in memory
+    =>it's always look for current value memory location
+
+variable =>2072   ["surya"]  ["roshan"]  ["ram"]
+                   2072        1078        2900
+
+linked list have it's own structre to hold the value
+    that is node 
+    where each node in linked list have two parts
+    1=>data
+    2=>address of next node
+
+linked in different place
+    =>objects
+    =>refernce data type(Dynamic memory allocation we are using)
+
+    Advantage
+        =>no wastage of memory dynamic memory
+        =easy intraction ith element
+        =>more efficient memory allocation
+    Disdvantage
+        =>it's pointers if we lose any node it will lose in memory
+        =>if head node is lost then your entire linked list id losted
+        =>we con't access element randomly in linked
+
+    implementation of linked
+
+        lot of operation we can do in liked list
+
+            1)insertion
+            2)delete
+            3)access element in liked list
+            4)search the element in liked list
+
+    
+    insert the data into liked list
+
+        =>two different ways to insert data into liked list
+            =>insert at the end
+                consider we have linked list of 4 node
+                head=>[data:"hemanth",next:300]=>["surya":13]=>["roshan":56]=>["sharath":110] =>["shekar",next:null]
+                        100              300           13                          56                       110
+                head=head=>next
+                head=>next==null
+
+                =>if you want data into liked list you need to to strat from first node and reapet the loop untile you read the last node
+                =>create a new to list and add the address of that to last node
+                
+
+            =>insert at the front
+                =>how can add node at the front of list
+
+             first_node=>  
+
+    head ["sankar":100]=>[data:"hemanth",next:300]=>["surya":13]=>["roshan":56]=>["sharath":110] =>["shekar",next:null]
+                           100                  300                 13         56                       110
+
+                first_node=>next=head
+
+                head=first
+
+                node1=[data:5,next:null]
+                node1->data=5
+                node1->next=NULL
+                temp=head;
+                ,head=>["hemanth",next:100]=>["sharath":200]=>["shree":null]=>node1
+                if(head==null){                                       temp
+                    head=node1;
+                }
+                else{
+                    while(temp->next!=NULL)
+                    {
+                            temp=temp->next
+                    }
+                    temp->next=node1
+                }
+
+        delete node from linked list
+            =>100[:200]=>[:300]=>[:null]=>[:null]
+                                          temp
+                                 temp1
+                temp=head
+                temp1=temp
+                while(temp->next!=null){
+                    temp1=temp
+                    temp=temp-next;
+                }
+                temp1->next=null;
+                free(temp)
+
+          head=>[:300]=>[:900]=>[:null]
+
+         temp=head
+         head=head->next;
+         free(temp)
+
+         =>delete an perticular element in linked list
+                delete 20 from the list
+           head= [1,100]=>[14,800]=>[20,700]=>[30,400]=>[60,null]
+                             temp1      temp
+     el=20
+        temp=head;
+        temp1=temp
+        while(temp->next!=null){
+            if(temp->data==ele){
+                    temp1->next=temp->next;
+                    free(temp);
+                    break;
+            }else{
+                temp1=temp
+                temp=temp->next;
+            }
+        }
+
+stack data structure
+    

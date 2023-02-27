@@ -1,0 +1,160 @@
+pointers
+    =>what is pointers?
+        =>pointing to some thinking
+        =>pointer is a variable but which will stores the address of another variable
+        =>type of pointer can be any type
+        =>we can use pointer for int,char,array,float etc.
+        =>pointer will help us access the value faster 
+        =>size of pointer can depend on type of that variable where which is holding the address
+        =>minimum size the pointer have is 2 byte
+
+    synatax
+
+        dataType* pointer;
+
+        example 
+        int* d;
+        float* f;
+        char *ch;
+
+    when your declaring any pointers in c (asterisk symbol)
+    =>pointer in c also called indirect variable
+    =>pointer reference variable
+
+    =>int a=30;
+    printf("%d",a);
+    =>int* b=&a;
+    =>printf("%x",b);
+    =>printf("%d",*b);
+
+    NULL pointer
+        =>some time in pointer 
+        =>when we try to create pointer,on that point we don't know address of the varaible to store in pointer
+        => int* p;
+        on that point we can use null ,
+        when you mention null has a value to the pointer that pointer is called null pointer
+        int *p=NULL; 
+        complier if you NULL it will make your pointer value as zero
+
+    Double pointer
+        =>Double pointer is also a pointer
+        =>this pointer will hold the address on another
+        =>pointer of pointer
+
+        =>the first pointer will hold the address of variable which hold the data
+        =>second pointer will hold the address of first pointer that's is double
+        look like this
+                        pointer2(Double pointer) => pointer1 => varaible[value]
+
+        how can we create double pointer
+
+        int **p;
+
+    
+        we can use a pointer to refer array
+        =>we can use a pointer to hold the address of array
+        =>array elements are store in cont memory
+
+        [1,2,3,4,5,6,7,8,9]
+        int array[5]={4,5,6,7,8};
+        int *arrayPointer=array;
+
+    =>arra[0]=>address+1
+    array[1]
+    
+    in pointers we can do some operation
+        pointer support all arithmetic operation
+        =>increment pointer
+        pointer++;
+        pointer=pointer+2;
+        =>Decrement
+        =>addition
+        =>substraction
+
+    =>by using pointers wre can send address from one function to another
+        =>call by value
+            =>send a value when we call the function  
+                =>if you change this value this will not affect the actual value
+        =>call by reference
+            =>call by reference will work becouse of pointer
+            =>in call by reference we send address insted of value
+            =>pointer support for send the pointer from one function to another function
+        
+        =>Array pointer to function 
+            =>
+
+            void main(){
+                int array[]={1,4,6,5,10};
+                addAll(&array)
+                printf("%d",array[0]);
+            }
+            void addAll(int* pointer){
+                for(int i=0;i<len;i++){
+                    sum=sum+array[i];
+                }
+                *pointer=20;
+                array[0]=10;
+            }
+        =>using pointer array we can build that connect the array
+
+//0,1,1,2,3,5,
+//array[100];
+//array[0]=0;
+//array[1]=1;
+
+    implement this task using array pointer
+
+Dangling pointers
+    =>it this type of error that will occur at the time of using pointer
+    =>it's apointer eeror which is generated at the time memory management
+    =>this type will occur becouse we try to use pointer which has no memory location to hold
+    =>Dangling is a pointer which is refer non valid memory address
+
+    =>when try to modify the pointer or the value of that pointer you will get into this eeror
+    =>time of memory de-allocation
+    =>segmentatuion fault error becouse of Dangling pointer
+
+
+=>
+        pointer => memory location =>it's memory location is removed
+
+        de-allocated this memory location 
+
+        const pointer
+
+        //if you make any pointer as constant pointer then the address of that pointer cannot change
+
+        //<data type> *const pointer name;
+
+        //pointer constant make that the value which the pointer vareiable is refering will be constnt
+
+        //syntax is 
+        //const <data type> * ptr;\
+        //const pointer and pointer const together
+
+        //syntax
+        //const data type *const pointer name;
+
+
+//generic pointers
+    =>when we create any pointer with specific type
+    =>we can hold the address of specific type
+
+    int *p;
+    int a=10;
+    p=&a;
+    float b=10.0;
+    p=&b;
+
+//pointer which can hold the address of all type of varibale 
+    =>generic pointer
+    =>how can we create generic pointer
+        =>data type * pointer name;
+        =>void * ptr; =>this generic pointer
+    =>generic pointer is also called void poointer
+
+deference pointer
+    =>indirect refernce of variable
+    =>*pointer is deference pointer
+    
+

@@ -1,0 +1,311 @@
+loop statements
+    for 
+        for loop is an iterae statements
+        it will help us execute perticualar statements frequently
+        for loop will take 3 expression in it,and it's optional
+
+            syntax
+            for(expression 1;expression 2; expression 3){
+                //statements
+            }
+
+            expression 1 =>initalization of loop  
+                    =>it will be execute only once in the loop
+            expression 2 => condition
+                    =>this condition will check frequently in the loop for each interaction
+                    =>for each time if you check condition it will provide 2 reusability
+                    =>true and false
+                    =>until condition result true you loop will repeatedly execute the statements
+
+            expression 3 =>inc/decimal 
+                    =>after execute of each iteration the inc/dec expression will be execute
+                    =>after compilation of each execution it will go back expression 2
+
+            =>to read element in array we can use for b/c we know the size of array 
+       
+    while
+        =>while loop is an condition loop 
+        =>this loop have only one expression at it beg 
+
+        =>the initalization of while will be done out the while
+        =>it's an optional
+        =>increment of loop will done inside the while it's optional
+        =>while loop is depend on condition
+
+        =>syntax 
+            initalization
+            int i=0;
+
+            while(condition){
+                //statements
+
+                increment operation
+            }
+        =>while loop will repeatedly execute the statements until condition true
+        =>while loop we use in state where we don't know how many time the loop as to be execute the statements
+        =>we use while to read elements in linked list
+            while(node->next!=NULL){
+
+            }
+            pre condition looping
+---------------------------------------------------
+    do while
+        =>type of loop
+        =>this loop is post condition loop
+        =>this help us to execute the statements repeatedly until the condition true
+        =>we use this loop mainly where i need to execute the body of loop at least once
+    =>syntax
+    do{
+        printf("enter user name");
+        scanf("%s",username);
+
+    }while(user==list);
+
+    =>menu-driven application we use do while loop
+
+    =>infinite loop in c
+        =>a loop the in the state of endless execution
+        =>if your logic is wrong
+        =>execute will take place forever
+
+    =>we can create infinite loop using for loop
+        for(;;){
+            printf("testing\n");
+        }
+
+
+=>structure in c
+    =>in c we can have ability to hold one type value at time
+
+        =>student detials
+            => string name
+            => string place
+            =>int roll
+            =>int age
+            =>float marks
+
+            array=>help us hold multiple value at a time
+            char[] name=
+            cher[] place=
+            int[] roll=
+            int[] age=
+            float[] marks=
+
+        =>name="surya"
+
+        =>name="rakesh"
+
+    structre  is help us to create user-defined data type which will help to store multiple type value we can hold in single variable
+
+    student {
+        string name,
+        roll
+        mrks;
+    } stu1
+
+
+structre 
+    element value you try to store in structre
+    that variable are members of that structre
+    =>each varible you create using structre can ability to access this members
+
+    node{
+        int age;
+        char names[][];
+        float marks
+        *next;
+    } head;
+    head->age
+    head->next
+
+    syntax 
+
+    struct structure_name{
+        datatype member1;
+        ...
+        ..
+        ..
+        datatype membern;
+    };
+
+    struct student{
+        char name[20];
+        int roll;
+        float marks;
+        char place[20];
+    
+    };
+
+    declare varible of structre
+    struct student std1;
+
+    to access the members of structre
+
+        =>we can access it in two way
+        =>we can access with dot operator
+        =>we can access with the help of arrow operator(pointer operator)
+
+    std1.name="raj";
+    std1.roll=34;
+    std1.marks=30;
+
+    std1->name;
+
+
+
+
+structre student{
+    name;
+    place;
+    roll;
+    marks;
+}
+student deatils structre
+    =>student array
+
+main(){
+    while(1){
+        choice(1,add 2: search ,3 update 4 exit);
+            1:add();
+            2:search();
+            3: update();
+            4:exit
+    }
+}
+
+you have create a function add student 
+        =>adding new student to list
+
+display perticular student ()
+        take roll no of student
+        display perticular studet details
+
+update student()
+        take student roll
+        search that roll no in student
+        =>name,place,marks
+
+
+
+Data structure
+    mainly we two type of data structre
+        linear data structre
+        what ever data we try to store using data structre all data will store in continuous maner
+            =>array [1,2,3,4,5,6,7,8]
+            =>linked list [1]=>[2]=>[3]=>[4]
+            =>Stack
+                =>stack is also linear data structre
+                =>it have roll
+                    =>which value you insert first must be deleted least
+                    =>which value you insert last will delete first
+                    follow  the Last in first out(LIFO)
+                =>when we try to insert any value to the stack
+                =>it has to insert at the top
+                =>when you try to delete any element from the stack you have to delete from top
+
+                [1,3,4,5,6,7,8,9,10]
+                ex:
+                       stack:=>[]
+                       top=-1
+                       insert 1 into stack
+                        top=top+1=0
+                        [1]
+                    insert 2 into stack
+                        top=top+1=1
+                        [2,1]
+                        top
+                        [3,2,1]
+                        top
+                        delete pop()
+                        top=top-1;
+                        [2,1]
+                    use of this application
+                        =>music app
+                    g    c,d
+                    =>play list=>[d,c,a]
+                    =>video
+                    =>watch list history you tube
+                    =>which video you watched currently that will be at the first in history
+                    [v1,v2,v3,v4]
+                    [v4,v3,v2,]
+                    emails we are using stack
+                    [,today,thismonth,lastmonth]
+
+                =>in stack we have some operation
+                        push()=>insert element at the top
+                        pop()=>delete element at the top
+                        peek()=>return which is the element that present at top
+                        isEmpty()=>inform you that stack empty or not
+                        isFull()=>is stack is full ot not
+
+                Adv
+                    =>we can use this concept in many application wher i need to maintain and list all activity
+                    =>it will store element in proper order
+                dis Adv
+                    =>sort the stack
+                    =>it's not flexible to read element
+                    =>search
+                Application
+                    web application
+                    undo
+
+                how to implement the stack
+            =>Queue
+                =>what is queue?
+                    =>it's follows first in first out 
+                    =>queue is also linear data structure
+                    =>insertion from rear end
+                    =>deletion from front end
+
+                =>operation in queue
+                    =>enqueue() =>insert element into queue
+                    =>dequeue() =>delete element from queue
+                    =>isempty() =>chek queue is empty or not
+                    =>isfull()=>check queue is full or not
+                    =>peekfirst()=>element that is present at first end
+                    =>peekrear()=>element that is present at rear end
+
+                application
+                    =>printer
+                    1 print 2 print 3 print
+                    fifo
+                    =>book apps
+                    =>if you book tecket first you get ticket first
+                    =>net banking
+                    =>neft =>12hr
+                    =>e web site
+
+            queue implement
+
+        queue=>[]
+        rear=-1,front=-1
+        insert 2 into queue
+            rear=rea+1
+            [2]
+             r=0
+        insert 3
+        rear=rear+1;
+        rear=0+1;
+             [2,3]
+                r=1
+        insert 4
+        rear=rear+1
+        rear=1+1=2
+         [2,3,4]
+              r
+
+        delete
+        front =-1
+        front=front+1
+        front=0
+        [2,3,4]
+        f
+        f=f+1
+        f=0+1
+        [3,4]
+        f   r
+        nonliner data structre
+                Tree    =>the data not be in continuous memory
+                            1 5 2 6 8 
+
+                graph

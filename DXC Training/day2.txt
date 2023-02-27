@@ -1,0 +1,429 @@
+c programing language
+    history
+        =>c language was intr in 1970's (1972)
+        =>Dennis ritchie
+        =>AT&T laboratories
+
+    =>c language developed to overcome the problem in old programing language
+        =>first programing language before c, B language,A language
+        =>c language was developed to build linex os  (UNIX)
+        =>all kernal software writen on c language
+
+        mkdir
+        cd 
+
+    =>1957 =>telephone
+
+    =>1960 language Algol
+
+    =>1970 BCL(BCPL)
+    =>B 1970 =>tv there remote
+    =>1970's  =>operating system interaction
+        =>c language 1972
+        =>1975
+
+        =>1999 stnd language build software
+
+    =>c is an mother of language
+        what modern language java, python,javascript,
+        most of language compiler,jvm,kernels written by c language
+        c is core language for all the language
+        =>compiler of your language
+
+    =>c mid level language
+        =>becouse c support both the concept low-level language and high-level
+
+        high level ===>c compiler ====> low level ===>machine code ===>that was used by kernels to execute your h/want
+    
+    => c is an system language
+        =>c is basicaly help us to build a software to intract with h/w
+            =>(ex kernel)
+        =>os,drivers
+
+
+features of c language
+    =>faster language
+    =>mid-level language
+    =>simple language
+    =>portable
+        =>c language i can use in different operating system
+        =>windows,unix,mac
+    =>pointers
+    =>library
+    =>it will support for high level
+    =>good memory managment
+    =>structre approch
+        
+
+
+c programing language 
+    =>in our local system if you want execute c program we need compiler
+    =>codeBlocks
+    =>turbo c
+        =>c virtual env
+
+procedure of c language
+    =>you have start with c headrs
+    =>declaration of all the function that used in file need to mention
+    =>mention all variable in our program
+    =>main method
+
+
+compilation in c
+    =>what is compilation?
+        =>convert our code into binary
+        =>convert source code into object code
+
+    when we written any code in c that will be in the formate of developer understanding level
+
+
+    printf("my name is surya") 
+
+    but our system will understanding only one language called binary
+
+    main(){
+        printf("my name is surya")   ========>   00111111111111111000000000000
+                                                00000000000001010010001000100100 ==========>is send to executor(cpu)=====>then h/w start work on you task
+                                                11001001000100100100101000000
+    }
+     process the main code =====>compilation(compiler)=====>machine code==========>linking process(execution pocess)=======>output
+
+    for do compilation process we need a compiler
+    here compiler is software which help us to conveert you main code to machine
+
+
+
+variables in c
+        =>variable will be name of memory location where the data is stored
+    
+    varible in c why we need variable
+        =>in our program we try to focus on build logic of application
+        =>we mainly consider handling of how to handle the data efficiently
+
+    =>shop managment system
+        =>customer
+        =>product
+        =>shopping customer detials
+        =>arragment of product
+
+        =>h/want
+        =>access of data from h/w will be diffecult
+
+    =>variable will help us to hold the data temp in RAM at that time
+    =>variable is very importat feature of any programing this will help us to hold the data in such a way that when i need that data i can access with in my program with the help of that variable
+
+    syntax of variable 
+        =>datatype variable_name;
+        =>two types we can create variable
+        =>we can just declaration the variable
+                datatype variable_name; =>declaration
+
+        =>we can define the varible
+                datatype variable_name = value; defination
+
+    when we create any variables
+        we can multiple variable of same type a time
+
+        datatype variable_name,variable_name2,variable_name3;
+
+        ex float num1,num2,num3;
+
+    when we declare any variable name
+            we have to follow some rule
+
+            1)all the variable name must be start with alphabets,underscore
+            2)all can have alphabets,number,underscore
+            3)we con't reserved word or keyword
+
+
+    ex  
+        check valid varable or not
+
+            float per%; invalid
+            float __score; valid
+            float score35,int;
+
+        =>we have follow varible declaration rule
+            =>when we try to create any variable
+                =>allways your name must be start will small letter
+                =>if there will to words in variable second word as to be start with capital letter
+
+            string fullFirstName;
+
+        
+
+        type of variable in c
+            =>this type of variable is divided based on it's use
+                =>local variable
+                    =>any variable you beclare with in the block of the code,that will be local (block can be method,structure,condition)
+                    =>block is nothing but anything that start with { end with } that is called block\
+                    =>the scope of that variable will be with in that block
+                =>global variable
+                    =>a variable which is declared out the code block(function) that variable are called global variable
+                    =>global variable we can access any where in our program=>scope will be though our program
+                =>static variable 
+                static variable is also an normal variable
+                static variable will same in entire program life address
+                syntax 
+
+                static datatype variable;
+
+                student detials
+        static  college=nitt
+1---------------------------------
+                name : surya
+                place :delhi
+                branch :cs
+                id :34
+2-------------------------------------------------
+                name :shekar
+                place : banglore
+                branch :is
+                id :45
+3-------------------------------------------
+                 name :manoj
+                place :surath
+                branch :ec
+                id :50
+
+                ...
+                ...
+                ..
+
+
+
+datatype in c
+            =>basic type primitive data type
+                data type       size
+                =>char           1 byte
+                    char demo='h';
+                    array char to hold multiple char
+                =>int            2 byte
+                    whole number 
+                    int age=30;
+                =>short          1 byte
+                    short age=5;
+                =>long int       4 byte
+                    long int phno=5557834563453452364;
+
+                =>float        2 byte - 4 byte
+                    float per=30.856564;       
+                =>double      4 byte -8 byte    
+                        double per = 40.5365625464563;
+                =>long double   10byte;
+                 long double pi=3.1456732198
+            =>Derived data type
+                =>a data type which is created with the help of primitive data
+                ex : array
+
+                int array[10];
+                string 
+            =>structre date type
+
+                    =>if you combine different data type together as single datatype
+
+formate of datatype
+    =>when we want to hndle data type in c (taking input/print the value ) we need of that data
+    datatype   formate
+    char        %c
+    SHORT       %s
+    int         %d
+    long int    %ld
+    float       %f
+    double      %b
+
+
+
+
+c programing operator
+    what is operator?
+        =>operator is symbol(they have some logic) used to perform operation on operands(value,variable)
+            =>if you need to some usefull task on data we can do that with help of operator 
+    =>Arithmetic 
+        =>if you want perform any Arithmetic operation we need Arithmetic
+            =>add(+),sub(-),mul(*),div(/)
+            ,mod(%)=>when you divid any number if you don't want to divide with decimal ,it return the remaining value in division
+
+    =>logical 
+        =>&&(and),||(or),!(not)
+        this will cosider boolean value (true,false)
+    ex  
+        we use logical operator to combine multiple condition
+
+        age>18 age<30
+
+        age>18 && age<30
+            print("he can go to the college")
+
+        logic and
+                return true =>if both condtion id true
+
+                true && true =>true
+                false =>false
+
+        logical or
+                true || false =>true
+                false || true =>true
+                false || false =>false
+        logical not !
+                true =>!true=>false
+                !false =>true
+    =>relational
+        it will help us compare the operands
+            <,>,<=,>=,==,!=
+
+        car_cost<1000000
+            printf("you can get this car")
+        age==18
+         pintf("you can vote from this year")
+    =>bitwise
+        =>&,|,!
+            =>it checks bit by bit
+            =>doing binary calculation
+
+            2&4    =>   
+            2     =>  0010
+            4     =>  0100
+            2&4   =>  0000
+
+        10&2 ==>  2,
+                
+            10=>  1010
+            2 =>   0010
+            =>     0010 =>2
+   =>assignment
+        =>we want to asign any value to variable we need assignment       
+        = is an assignment shorthand operator
+        shorthand is a combination of assignment operands and Arithmetic
+            => = 
+            shorthand
+                => +=
+                =>-=
+                =>*=
+                =>/=
+                =>%=
+
+    =>shift operator
+        => right shift
+            >>
+        => left shift
+           <<
+        shift operator also perform on bit wise
+
+        10>>2 => 00001010 => 00000101 => 00000010
+
+    =>unary
+        =>++ --
+        =>prefix
+        int age=30;
+        ++age;
+        =>postfix 
+        age++
+
+condition statments
+
+    =>if you want to controll the execution of code we need conditional statments
+    =>if-else
+    =>switch
+    =>loop
+    =>jump statments
+
+    if()
+        =>condition statments
+            =>it will execution the block of next to it if and only if the condition is true
+    
+    each if condition have there own block
+    syntax
+    if(condition){ //if this block false
+        statments;
+        ...
+        ..
+    }
+    else{
+            statments ..
+            that will be executed;
+    }
+
+    //different type of if else condtion 
+
+        =>simple if and else condition
+        =>nested if else condition
+        =>if else lader
+        if(){
+
+        }
+        else if(){
+
+        }
+        else if(){
+
+        }
+        else{
+
+        }
+
+        task
+            take a input from user the input is age
+            int age
+            scanf("%d",&age);
+
+            you have check if range of age 
+            (6-12)
+            {
+                person in pri scholl
+            }
+            (12-18)
+            {
+                high sch
+            }
+            18-23{
+                college
+            }
+            23{
+                is in company
+            }
+            else
+            {
+                is a kid
+            }
+
+switch
+ in c
+    =>switch
+        case
+        break
+        default
+
+        when we have multiple choice ,when we need to select with in that choice we switch statments
+
+        syntax
+
+        switch(expression){
+            case choice1: statments
+                break;
+            case choice2: statments
+
+            default:
+                it will help us to execute this if choice willnot match ny case;
+        }
+
+        loop statments
+            =>check a condition multiple time
+            =>execute the perticular block multiple time we loop until it reach specific condition
+
+        =>reusability of statments
+        =>it will help us repeatedly execute same statments multiple based on condition
+
+        in c we have different types of looping statments
+        1)for loop
+            =>the for syntax
+            for(intial value;condition;increment stat){
+                statments;
+            }
+
+        
+        2)while loop
+        3)do while
+
+//my name is surya
+
